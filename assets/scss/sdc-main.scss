@@ -1,0 +1,76 @@
+.has-background-sdc-grey {
+    background-color: $sdc-background-grey;
+}
+
+.section .sdc-section {
+    display: flex;
+}
+
+.card.sdc-card {
+    box-sizing: border-box;
+
+    /* Auto layout */
+
+    width: 373px;
+    height: 574px;
+    left: 534px;
+    top: 244px;
+
+    /* White */
+
+    background: #FFFFFF;
+    /* Alpha / Black 4% */
+
+    border: 2px solid rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    position: static;
+}
+
+.card-content.sdc-card {
+    padding: 40px 40px 0px 40px;
+    .title {
+        text-transform: capitalize;
+    }
+    .pokemon-abilities, .pokemon-types, .pokemon-hp, .pokemon-attack, .pokemon-defense {
+        span {
+            span {
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+.card-footer.sdc-card {
+    border: none;
+    padding: 20px 40px 40px 40px;
+    .button {
+        box-sizing: border-box;
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 12px 24px;
+
+        width: 122px;
+        height: 44px;
+
+        /* Blurple */
+
+        color: #5700ff;
+        border: 2px solid #5700FF;
+        border-radius: 22px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+    .button.is-primary.is-outlined:hover, .button.is-primary.is-outlined.is-hovered, .button.is-primary.is-outlined:focus, .button.is-primary.is-outlined.is-focused {
+        background-color: #5700ff;
+        border-color: #5700ff;
+        color: #fff;
+    }
+}
